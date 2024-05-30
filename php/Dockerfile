@@ -91,9 +91,6 @@ libpng-dev && \
     docker-php-ext-configure gd --enable-gd --with-freetype --with-jpeg && \
     docker-php-ext-install gd
 
-RUN curl -fsSL https://deb.nodesource.com/setup_16.x | sh
-RUN apt-get -y install nodejs
-
 
 COPY settings.php /var/www/web/sites/default/settings.php
 
