@@ -833,11 +833,11 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
    include $app_root . '/' . $site_path . '/settings.local.php';
  }
 $databases['default']['default'] = array (
-  'database' => 'charm_city_db',
-  'username' => 'charm_city',
+  'database' => 'dbname',
+  'username' => 'dbuser',
   'password' => 'password',
   'prefix' => '',
-  'host' => 'localhost',
+  'host' => 'database',
   'port' => '3306',
   'namespace' => 'Drupal\\mysql\\Driver\\Database\\mysql',
   'driver' => 'mysql',
