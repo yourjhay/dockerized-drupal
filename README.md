@@ -34,7 +34,7 @@ docker-compose up
 docker-compose up -d 
 ```
 
-You can now visit your laravel app in your browser using your localhost or Host IP Address and `APP_PORT` in your .env
+You can now visit your app in your browser using your localhost or Host IP Address and `APP_PORT` in your .env
 
 Note: Ignore **application pulling** error. It will build the image instead.
 
