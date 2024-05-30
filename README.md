@@ -58,7 +58,7 @@ For root:
 ```
 docker exec -it <container-name> bash
 ```
-# Laravel Environment (.env) Updates
+# Environment (.env) or Settings Updates
 
 Update your Project .env or Settings
 
