@@ -89,3 +89,16 @@ If you want to access mysql container within your local machine / localhost
 ```
 
 Add the above config under *database service* in `docker-compose.yml`.
+
+## Accesing Database 
+If you want to access database like phpmyadmin, Please use `adminer.php` included in this repo. You can copy this in your project root folder so you can access this on your browser `/adminer.php`
+
+```
+Server: database
+Username: (values in the .env)
+Password: (values in the .env)
+Database: (values in the .env)
+```
+You can check permanent login. So you don't need to input values again on the adminer login form page.
+
+Please read more on: https://www.adminer.org/
