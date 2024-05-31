@@ -22,6 +22,13 @@ cp .env.example .env
 ```
 Edit `.env` file according to your configuration need.
 
+# Importing an existing mysql database
+If you want to import your `existing mysql dump` file on the container. Please put or copy your `.sql` or `.sql.gz` file on _**mysql folder.**_
+
+Reference: [MYSQL DOCKER](https://hub.docker.com/_/mysql#:~:text=When%20a%20container,the%20MYSQL_DATABASE%20variable.)
+
+When a container is started for the first time, a new database with the specified name will be created and initialized with the provided configuration variables. Furthermore, it will execute files with extensions `.sh`, `.sql` and `.sql.gz` that are found in /docker-entrypoint-initdb.d. Files will be executed in alphabetical order. You can easily populate your mysql services by mounting a SQL dump into that directory and provide custom images with contributed data. SQL files will be imported by default to the database specified by the MYSQL_DATABASE variable.
+
 # Create and Run Container as current user
 
 ```
